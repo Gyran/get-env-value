@@ -24,7 +24,7 @@
     "test:watch": "npm run test -- --watch"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "author": "Gustav Ahlberg <Gustav.Ahlberg@gmail.com>",
   "license": "ISC"
