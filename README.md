@@ -26,12 +26,12 @@ import * as getEnvValue from 'get-env-value';
 const Config = {
   DATABASE: {
     HOST: getEnvValue.stringValue('DATABASE_HOST'),
-    NAME: getEnvValue.stringValue('DATABASE_NAME', 'woop'),
+    NAME: getEnvValue.stringValue('DATABASE_NAME', 'db_name'),
     PORT: getEnvValue.integerValue('DATABASE_PORT', 5432),
     USER: getEnvValue.stringValue('DATABASE_USER', 'user'),
     PASSWORD: getEnvValue.stringValue('DATABASE_PASSWORD'),
   },
 
-  PORT: getEnvValue.integerValue('DATABASE_PORT', 3000),
+  PORT: getEnvValue.integerValue('PORT', 3000),
 };
 ```
