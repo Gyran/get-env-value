@@ -21,7 +21,7 @@ yarn add get-env-value
 ## Usage
 
 ```js
-import * as getEnvValue from 'get-env-value';
+import getEnvValue from 'get-env-value';
 
 const Config = {
   DATABASE: {
