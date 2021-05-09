@@ -48,4 +48,42 @@ describe('get-env-value', () => {
       expect(value).toEqual(expected);
     });
   });
+
+  describe('integer value', () => {
+    test('returns the value if defined', () => {
+      process.env.INTEGER = '7';
+
+      const value = getEnvValue.integerValue('INTEGER');
+      const expected = 7;
+
+      expect(value).toBe(expected);
+    });
+
+    test('returns 0 if the value is not defined', () => {
+      delete process.env.INTEGER;
+
+      const value = getEnvValue.integerValue('INTEGER');
+      const expected = 0;
+
+      expect(value).toBe(expected);
+    });
+
+    test('returns provided default value if key is not defined', () => {
+      delete process.env.INTEGER;
+
+      const value = getEnvValue.integerValue('INTEGER', 5);
+      const expected = 5;
+
+      expect(value).toEqual(expected);
+    });
+
+    test('returns value if defined even if we provide a default value', () => {
+      process.env.INTEGER = '7';
+
+      const value = getEnvValue.integerValue('INTEGER', 5);
+      const expected = 7;
+
+      expect(value).toEqual(expected);
+    });
+  });
 });
