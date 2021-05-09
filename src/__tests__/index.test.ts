@@ -1,4 +1,4 @@
-import * as getEnvValue from '../index';
+import getEnvValue from '../index';
 
 describe('get-env-value', () => {
   const ENV_BACKUP = process.env;

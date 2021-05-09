@@ -48,3 +48,12 @@ function parsedJSONValue<T>(key: string, defaultValue?: T): T | undefined {
   return defaultValue;
 }
 export { parsedJSONValue };
+
+const getEnvValue = {
+  stringValue,
+  integerValue,
+  booleanValue,
+  parsedJSONValue,
+};
+
+export default getEnvValue;
