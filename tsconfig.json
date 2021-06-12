@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["es2017"],
-    "module": "CommonJS",
-    "target": "es2017", // node 8 (https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping#node-8)
+    "module": "ES2020",
     "strict": true,
     "declaration": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "moduleResolution": "node"
   },
   "include": ["src"],
   "exclude": ["**/*.test.ts"]
