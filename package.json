@@ -21,7 +21,8 @@
     "build:watch": "npm run build -- -w",
     "prepare": "npm run build",
     "test": "jest",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "test:coverage": "npm run test -- --coverage"
   },
   "engines": {
     "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
