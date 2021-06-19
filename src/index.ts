@@ -9,11 +9,9 @@ export const stringValue = (key: string, defaultValue: string = '') => {
 
 export const integerValue = (key: string, defaultValue = 0): number => {
   const envValue = stringValue(key, '');
-  if (typeof envValue === 'string') {
-    const intValue = Number.parseInt(envValue, 10);
-    if (Number.isInteger(intValue)) {
-      return intValue;
-    }
+  const intValue = Number.parseInt(envValue, 10);
+  if (Number.isInteger(intValue)) {
+    return intValue;
   }
 
   return defaultValue;
